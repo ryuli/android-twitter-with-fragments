@@ -22,6 +22,6 @@ Completed user stories:
 
 lkthrough of all user stories:
 
-![Video Walkthrough](twitter_app_client_demo.gif)
+![Video Walkthrough](twitter_with_fragments_demo.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).

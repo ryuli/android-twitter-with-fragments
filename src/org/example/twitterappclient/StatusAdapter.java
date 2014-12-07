@@ -92,6 +92,7 @@ public class StatusAdapter extends ArrayAdapter<Status> {
 		
 		if (context instanceof MainActivity) {
 			ivProfileImage.setOnClickListener(new ProfileClickListener(user));
+			ivReply.setOnClickListener(new ReplyClickListener(user.getScreenName()));
 		}
 
 		tvUserName.setText(user.getName());
@@ -105,8 +106,6 @@ public class StatusAdapter extends ArrayAdapter<Status> {
 
 		tvCreateTime.setText(getTimeElapsedDesc(status.getCreatedAt()));
 		
-		ivReply.setOnClickListener(new ReplyClickListener(user.getScreenName()));
-
 		return convertView;
 	}
 
