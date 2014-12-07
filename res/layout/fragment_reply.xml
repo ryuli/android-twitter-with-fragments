@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/human_gray" 
+        android:contentDescription="@string/profile_image"/>
+
+    <EditText
+        android:id="@+id/etReplyContent"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ivProfileImage"
+        android:layout_toRightOf="@+id/ivProfileImage"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLength="140" />
+
+    <Button
+        android:id="@+id/btnReply"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/etReplyContent"
+        android:layout_below="@+id/etReplyContent"
+        android:background="#00B5E8"
+        android:text="@string/tweet_upper_case"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvRemainCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnReply"
+        android:layout_alignBottom="@+id/btnReply"
+        android:layout_toLeftOf="@+id/btnReply"
+        android:layout_marginRight="15dp"
+        android:text="@string/compose_text_remain_hint"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
